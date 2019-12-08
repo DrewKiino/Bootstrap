@@ -1,6 +1,7 @@
 import cors from 'cors'
 import express from 'express'
 import bodyParser from 'body-parser'
+import { Log } from '../util/Util'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -29,10 +30,10 @@ class App {
     // This is the middleware function which will be called before any routes get
     // hit which are defined after this point, i.e. in your app.js
     app.use((req, res, next) => {
-      print(req.method + ' ' + req.url)
+      Log(req.method + ' ' + req.url)
       console.log(req.headers)
       if (req.body !== undefined) {
-        print(req.body)
+        Log(req.body)
       }
 
       // Carry on with the request chain
