@@ -21,8 +21,9 @@ This is a starter project for bootstrapping API using NodeJS as the server stack
    ```
    
 ## Notes
-- The pre-compiled target is the `src` directory which creates a `dist` that we can run
+- the pre-compiled target is the `src` directory which creates a `dist` that we can run
 our production environment from.
 - `npm run dev` runs the `index.js` file from `src` while `npm start` runs `index.js` from `dist`
+- make sure to replace the the project name `api` to your project name in the `package.json
 
 
