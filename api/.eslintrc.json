@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "ignorePatterns": [
+    "build/",
+    "node_modules/"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error","never"],
+    "valid-jsdoc": ["warn"],
+    "indent": ["error", 2],
+    "no-unused-vars": ["error", { "vars": "local", "args": "none" }],
+    "require-jsdoc": ["off"],
+    "object-curly-spacing": ["error", "always"],
+    "max-len": [
+      "error",
+      {
+        "code": 150
+      }
+    ]
+  }
+}
